@@ -1,0 +1,455 @@
+#userProfilePage {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+    min-height: 80vh;
+}
+
+#userProfilePage div {
+    border-radius: 0.5rem;
+}
+
+#userProfilePage button {
+    border-radius: 0.5rem;
+}
+
+#userProfileSectionContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/*******************
+    SECTION 1
+********************/
+#userProfileSectionOne {
+    height: 100%;
+    text-align: center;
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+}
+
+#userProfilePhoto {
+    height: 100%;
+    width: 10rem;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#userProfilePhoto > img {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+#rankDisplayHolder {
+    margin-top: -6px;
+    width: 100%;
+}
+
+#rankDisplay {
+    padding: 0;
+    margin: 0;
+    width: 3rem;
+    height: 12rem;
+}
+
+#userInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: top;
+}
+#userName {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border: 1px solid blue;
+}
+
+#userRank {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border: 1px solid blue;
+}
+
+#memberSince {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border: 1px solid blue;
+}
+
+#addFriend {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+#accountSettings {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border: 1px solid red;
+}
+
+
+.accountSettingsContent {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem;
+    text-transform: none;
+}
+
+.accountSettingsContent h3 {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+.accountSettingsContent label {
+    display: block;
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+#uploadImage {
+    text-align: center;
+    width: 100%;
+}
+
+#uploadImage .modalButton {
+    border: 1px solid #000000;
+    padding: 0;
+    margin: 0 auto;
+    width: 10rem;
+}
+
+#uploadImage .mainModal {
+    width: 100%;
+}
+
+.cursorNone {
+    cursor: none;
+}
+
+
+/* correction dashboard */
+#userProfileSectionOne .modalButton {
+    border: 1px solid green;
+}
+
+#correctionsModal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.5rem;
+}
+
+#correctionsModal table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+  
+#correctionsModal td {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+}
+
+#correctionsModal th {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+}
+  
+#correctionsModal tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* grammar word bank */
+.grammarWordBank {
+    height: 3rem;
+    border-radius: 0;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+/*********************
+    section two 
+**********************/
+
+#userProfileSectionTwo {
+    text-align: center;
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-evenly;
+}
+
+#creditsSection{
+    flex-direction: column;
+}
+
+#creditsSection div {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+/* correction dashboard */
+#creditHistoryDash {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+#creditHistoryDash table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+  
+#creditHistoryDash td {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 0.3rem;
+}
+
+#creditHistoryDash th {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 0.3rem;
+}
+  
+#creditHistoryDash tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+/* grammar word bank */
+
+.creditsListsBuy {
+    border-radius: 0.5rem;
+    border: black solid 1px;
+}
+
+#buyCreditsLink{
+    border-radius: 0.5rem;
+    border: black solid 1px;
+    background-color: lightpink;
+}
+
+/* dashboard classes for section two */
+
+#creditsSection .mainModal {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 0;
+    margin-top: 1.5rem;
+    border: black solid 1px;
+    border-radius: 0.5rem;
+}
+
+#creditsSection .modalButton {
+    border: none !important;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* calendar container */
+
+#calendarContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* tutoring schedule */
+
+#tutoringSchedule{
+    border: black solid 1px;
+    margin: 0.5rem;
+}
+
+.tempCalendar {
+    display: flex;
+    justify-content: center;
+}
+
+.tempCalendar .react-calendar {
+    width: 15rem;
+}
+#findTutorDiv {
+    background-color: #e8f4f8;
+    width: 22rem;
+    height: 3rem;
+    border-radius: 0;
+    border: black solid 1px;
+    margin: 0.5rem;
+}
+
+/***********************
+    section four
+************************/
+#userProfileSectionFour {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* friends/award top container div */
+#friendsAwardsContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.userSectionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: black solid 1px;
+    width: 25rem;
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+
+.friendFlexCss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.3rem;
+}
+
+#friendsListDiv > a img{
+    width: 2rem;
+    height: 2rem;
+}
+
+/* achievements */
+
+.achievementsBadges {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem;
+}
+
+.achievementsBadges > img {
+    width: 2rem;
+    height: 2.5rem;
+}
+
+.achievementSpan {
+    height: 3rem;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#individualScoreboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.3rem;
+}
+
+#individualScoreboard table {
+    width: 90%;
+    margin: 0 auto;
+    text-transform: none;
+}
+
+#individualScoreboard th {
+    color: red;
+}
+#individualScoreboard td {
+    padding: 0;
+    border-bottom: 1px solid rgb(180, 177, 177);
+}
+/***********************
+    UserProfileCourses
+************************/
+#userShowMoreButton {
+    border: 1px solid black;
+    color: black;
+}
+
+/**
+* ----------------------------------------
+* MEDIA QUERIES
+* ----------------------------------------
+*/
+@media (max-width: 800px) {
+    #rankDisplayHolder {
+        top: 40%;
+    }
+
+    #uploadImage .modalButton {
+        border: 1px solid blue;
+        padding: 0;
+        margin: 0 auto;
+        width: 8rem;
+    }
+
+    
+} 
+
+@media (max-width: 600px) {
+    #userProfileSectionOne {
+        width: 100%;
+    }
+    
+    #uploadImage .modalButton {
+        font-size: 0.9rem;
+    }
+
+    #rankDisplayHolder {
+        top: 35%;
+    }
+
+    #friendsListDiv{
+        overflow: auto;
+        border: black solid 1px;
+        width: 99%;
+        margin-bottom: 0.5rem;
+    }
+    
+    #achievementContainer{
+        border: black solid 1px;
+        width: 99%;
+        margin: 0 auto;
+    }
+
+    #userShowMoreButton {
+        border: 1px solid black;
+        color: black;
+        width: 100%;
+    }
+
+    #friendsAwardsContainer {
+        flex-direction: column;
+    }
+    
+
+}

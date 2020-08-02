@@ -1,0 +1,192 @@
+body {
+    overflow-x: hidden;
+}
+
+.textShadowPop {
+    font-size: 7vw;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    animation: text-color-change 2s linear infinite alternate both, text-shadow-pop-tl 0.6s .6s both;
+}
+
+@keyframes text-color-change {
+    from {color: red;}
+    to {color: blue;}
+}
+
+/* Main Title */
+@-webkit-keyframes text-shadow-pop-tl {
+    0% {
+        text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+        -webkit-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        text-shadow: -1px -1px #555555, -2px -2px #555555, -3px -3px #555555, -4px -4px #555555, -5px -5px #555555, -6px -6px #555555, -7px -7px #555555, -8px -8px #555555;
+        -webkit-transform: translateX(8px) translateY(8px);
+        transform: translateX(8px) translateY(8px);
+    }
+}
+
+@keyframes text-shadow-pop-tl {
+    0% {
+        text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+        -webkit-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        text-shadow: -1px -1px #555555, -2px -2px #555555, -3px -3px #555555, -4px -4px #555555, -5px -5px #555555, -6px -6px #555555, -7px -7px #555555, -8px -8px #555555;
+        -webkit-transform: translateX(8px) translateY(8px);
+        transform: translateX(8px) translateY(8px);
+    }
+}
+  
+
+.articleTitle {
+    margin: 0 6rem 0 6rem;
+    text-align: center;
+    font-size: 3vw;
+    color: rgb(255, 0, 106);
+}
+
+.articleDate {
+    font-size: .8rem;
+    color: gray;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.articleContent {
+    text-indent: 4%;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.articlesCollapsible {
+    border: 2px solid black;
+    margin-bottom: 2rem;
+}
+
+.commentContent {
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+.articleClickable {
+    cursor: pointer;
+}
+
+.articlesCollapsible:hover {
+    -webkit-box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.entertainmentPageTitleAndArticle:active {
+    cursor: pointer;
+}
+
+.entertainmentPageMainHeading {
+    text-align: center;
+}
+
+#entertainmentMainWrapper {
+    display: flex;
+}
+
+#twitterWrapper {
+    display: inline-block;
+    min-width: 18rem;
+    margin-left: 1rem;
+    border: 2px solid rgb(255, 0, 106);
+}
+
+#articlesWrapper {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1rem 0 1rem;
+}
+
+.commentsWrapper {
+    background-color: white;
+    border-top: 2px dashed black;
+}
+
+.comment {
+    width: 90%;
+}
+
+.imagePlaceholderContainer {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1rem;
+}
+
+.commentImagePlaceholder {
+    vertical-align: middle;
+    font-size: 2.5rem;
+}
+
+.commentAuthorDate {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.commentAuthor {
+    font-weight: bold;
+}
+
+.commentDate {
+    font-size: .8rem;
+    color: gray;
+}
+
+.comment {
+    margin-bottom: 1rem;
+    white-space: pre-line;
+}
+
+.commentBox {
+    width: 94%;
+    margin: 1rem auto;
+    border-bottom: 1px solid gray;
+}
+
+.addCommentsForm {
+    width: 94%;
+    margin: auto;
+}
+
+input.commentForm {
+    margin-top: 1rem;
+}
+
+textarea.commentForm {
+    width: 100%;
+    height: 6rem;
+    margin-top: .2rem;
+}
+
+.pageSystem {
+    text-align: right;
+}
+
+.pageSystem span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.pageSystem button:hover {
+    box-shadow: 0 0 5px 0px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 1300px) {
+    div #twitterWrapper {
+        min-width: 13rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    div #twitterWrapper {
+        display: none;
+    }
+}

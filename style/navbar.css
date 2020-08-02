@@ -1,0 +1,620 @@
+/*********NavBar*********/
+.nav-wrapper {
+    font-weight: bold;
+    border-bottom: 2px solid #F3F2EF;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+#mainNavContent {
+    width: 93%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.midNav{
+    font-size: 3rem;
+    font-family: 'Jua', sans-serif;
+    color: #A19CE8;
+    /* text-shadow: 1px 1px #824cb3; */
+    animation: greetings-reveal 1.5s ease;
+}
+
+/*Logo Icon*/
+.logoIcon{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.logoIcon img{
+    filter: invert(1);
+    width: 4rem;
+    margin: 0.2rem;
+}
+
+/*Log In*/
+#signUpLoginContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: top;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    text-transform: none;
+    font-weight: normal;
+}
+
+
+.signUpLogInForm input {
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+}
+
+.signUpLogInForm select {
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+}
+
+
+.formOrganiser {
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.formOrganiser label {
+    margin:0.2rem;
+    width: 100%;
+    display: block;
+}
+
+.signUpError {
+    color: #B50112;
+}
+
+.signUpApproved {
+    color: green;
+}
+
+.existingSignUpError {
+    border: 2px solid #B50112;
+    box-shadow: 1px 1px #91030C;
+}
+
+.signUpErrorMessage {
+    color: #B50112;
+}
+
+.logOutButton {
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+}
+/* profile picture */
+#pPicCont {
+    width: 4.5rem;
+    height: 4.5rem;
+    text-align: center;
+}
+#pPicCont img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.smallRankDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginNavDisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.rightNav {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#mailIcon {
+    width: 1.5rem;
+    padding-right: 0.3rem;
+}
+/*Trigger icon*/
+
+.tBar1, .tBar2, .tBar3{
+    width: 1.5rem;
+    height: 0.15rem;
+    background-color: black;
+    margin: .2rem 0;
+    transition: 0.5s;
+}
+
+/*Side Menu*/
+#visibleSideMenu{
+    background-color: white;
+    color: rgb(23, 26, 32);
+    width: 12rem;
+    text-transform: uppercase;
+    padding: 0;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: visible;
+    border-left: 3px solid #33303C;
+    border-bottom: 3px solid #33303C;
+    border-radius: 0.5rem;
+}
+
+#sideMenu{
+    background-color: white;
+    color: rgb(23, 26, 32);
+    width: 12rem;
+    text-transform: uppercase;
+    padding: 0;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    border-left: 3px solid #33303C;
+    border-bottom: 3px solid #33303C;
+    border-radius: 0.5rem;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.sideMenuCategory {
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.sideMenuOptLevel{
+    text-align: center;
+    border-bottom: 1px solid #e0e7f8;
+    margin: 0.1rem;
+    padding: 0.1rem;
+    transition: background-color 0.75s ease;
+}
+
+.sideMenuOptLevel:hover {
+    background-color: #e0e7f8;
+}
+.tutoring {
+    border-bottom: 1px solid #fdeee7;
+    transition: background-color 0.75s ease;
+}
+
+.tutoring:hover {
+    background-color:#fdeee7;
+}
+
+#selfStudy{
+    border-bottom: 3px solid #6FBFE3;
+}
+
+#courses{  
+    border-bottom: 3px solid #C7B5E8;
+}
+
+#tutoring{
+    border-bottom: 3px solid #E3B3CB;
+}
+
+.sideMenuCategory .cultureMenu {
+    border-bottom: 3px solid #AFE0B4;
+}
+
+.cultureMenu {
+    transition: background-color 0.75s ease;
+}
+
+.cultureMenu:hover {
+    background-color: #effbeb;
+}
+
+#resources {
+    border-bottom: 3px solid #706da2;
+    color: #A19CE8;
+    text-shadow: 1px 1px #706da2;
+    transition: background-color 0.75s ease;
+}
+
+#resources:hover {
+    background-color: #e2e1f8;
+}
+
+#credits{
+    border: 3px solid #B74157;
+    border-radius: 0.5rem;
+    color: #B74157;
+    text-shadow: 1px 1px #573B49;
+    transition: background-color 0.75s ease;
+} 
+
+#credits:hover {
+    background-color: #f0d9dd;
+}
+
+/***Hover animation***/
+
+.triggerIcon:hover #sideMenu{
+    right: 0;
+    animation: slidein 1s;
+    visibility: visible;
+}
+
+/* Levels */
+.grammarVocab {
+    display: none;
+    text-align: center;
+    transition: all 0.75s ease;
+}
+
+.levelHover{
+    border-bottom: 1px solid #d1f5eb;
+    transition: background-color 1s ease;
+    margin: 0.2rem;
+    text-align: center;
+}
+
+.levelHover:hover {
+    background-color: #d1f5eb;
+}
+
+/* .navLevel {
+    padding: 0.1rem;
+} */
+
+.grammarVocab:hover {
+    background-color: white;
+}
+
+.levelHover:hover .grammarVocab{
+    display: inline-block;
+    width: 100%;
+}
+
+
+/*Menubar icon*/
+.triggerIcon:hover .tBar1{
+    transform: rotate(45deg) translate(3px,5px);
+    background-color: rgb(23, 26, 32);
+}
+.triggerIcon:hover .tBar2{
+    opacity: 0; 
+}
+.triggerIcon:hover .tBar3{
+    transform: rotate(-45deg) translate(2px,-4px);
+    background-color: rgb(23, 26, 32);
+}
+
+.closeMenu {
+    display: none;
+}
+
+.visibleCloseMenu {
+    color: grey;
+    font-size: small;
+    border: 1px solid grey;
+    margin: 0.5rem;
+    text-align: center;
+    display: block;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+.hideLogin {
+    display:none;
+}
+
+/**
+* ----------------------------------------
+* SEARCH BAR
+* ----------------------------------------
+*/
+#searchInput {
+    font-size: 1rem;
+}
+.searchBarResults {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-transform: none;
+    font-weight: normal;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.searchBarResults span {
+    color: #B50112;
+    text-decoration: underline;
+}
+.searchBarResults h3{
+    width: 100%;
+}
+
+.individualSearchResults {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    width: 30%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    white-space: pre-wrap;
+}
+
+.vocabResults {
+    width: fit-content;
+}
+
+.lexicalPart {
+    color: #B74157;
+}
+
+.individualSearchResults h4 {
+    color: #9341A3;
+    font-size: 1.3rem;
+}
+
+.navErrorMsg {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.searchBarCategory {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.searchBarCategory>h3 {
+    width: 100%;
+}
+
+.searchBarContainer .modal-main {
+    width: 98%;
+    height: 90%;
+    overflow: scroll;
+}
+
+.searchBarKoreanlevel {
+    font-size: smaller;
+    color: #706da2;
+}
+/**
+* ----------------------------------------
+* MEDIA QUERIES
+* ----------------------------------------
+*/
+@media (max-width: 1300px) {
+    .midNav{
+        font-size: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logoIcon {
+        font-size: small;
+    }
+    .logoIcon img{
+        width: 3.5rem;
+    }
+    .signUpLoginButton button {
+        margin: 0;
+        padding: 0;
+    }
+    #mainNavContent {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0.1rem;
+    }
+
+} 
+
+@media (max-width: 600px) {
+    .midNav{
+        font-size: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logoIcon {
+        font-size: small;
+        flex-direction: column;
+    }
+    .logoIcon img{
+        width: 2.5rem;
+    }
+    .signUpLoginButton button {
+        margin: 0;
+        padding: 0;
+    }
+    #mainNavContent {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0.1rem;
+    }
+
+    #mainNavContent button {
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+    .midNav {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .displaySideMenu {
+        visibility: visible !important;
+        right: 0;
+        animation: slidein 1s !important;
+    }
+
+    .closeMenu {
+        color: grey;
+        font-size: small;
+        border: 1px solid grey;
+        margin: 0.5rem;
+        text-align: center;
+        display: block;
+        border-radius: 0.5rem;
+    }
+
+    .showLogin {
+        display: none;
+    }
+
+    .hideLogin {
+        display: block;
+        flex-wrap: wrap;
+        margin: 0.2rem;
+        border-bottom: 3px solid #B74157;
+        padding-bottom: 0.2rem;
+    }
+
+    #loginNavDisplay {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hideLogin .signUpLoginButton button{
+        text-transform: uppercase;
+        border: none;
+        background-color: white;
+        color: #B74157;
+        text-shadow: 1px 1px #573B49;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .modalButton {
+        font-size: 1.1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .searchBarResults {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        text-transform: none;
+        font-weight: normal;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .searchBarResults span {
+        color: #B50112;
+        text-decoration: underline;
+    }
+    .searchBarResults h3{
+        width: 100%;
+    }
+    
+    .individualSearchResults {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 100%;
+        padding: 0.2rem;
+        margin: 0.2rem;
+        white-space: pre-wrap;
+    }
+    
+    .vocabResults {
+        width: 100%;
+    }
+    
+    .lexicalPart {
+        color: #B74157;
+    }
+    
+    .individualSearchResults h4 {
+        color: #9341A3;
+        font-size: 1.3rem;
+    }
+    
+    .navErrorMsg {
+        text-transform: none;
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    
+    .searchBarCategory {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .searchBarCategory>h3 {
+        width: 100%;
+    }
+    
+    .searchBarContainer .modal-main {
+        width: 98%;
+    }
+    
+
+}
+
+
+/**KEYFRAMES **/
+/*Animation for the sidemenu*/
+@keyframes slidein{
+    0%{top:0;
+    right: -350px;}
+    100%{top: 0;
+    right: 0;}
+}
+
+@keyframes greetings-reveal {
+   0% {opacity: 0;}
+   100%{opacity: 1;}
+}

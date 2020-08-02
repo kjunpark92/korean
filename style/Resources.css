@@ -1,0 +1,123 @@
+#resourcesContainer {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+#resourcesSections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.resourcesBox {
+  margin: 0.3rem;
+}
+
+.resourceBoxCollapsible {
+  padding: 0.3rem;
+  margin: 0.5rem;
+}
+
+.resourcesBoxContent ul {
+  padding: 0;
+}
+
+.resourcesBoxContent li {
+  list-style-type: none;
+}
+
+.resourcesBoxTitle {
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+}
+
+.fa-sort-down {
+  margin: 0.3rem;
+}
+
+#resourcesKIIP {
+  border: 2px solid #FF5297;
+  border-radius: 0.5rem;
+  color: #FF5297;
+}
+
+#resourcesKIIP .resourcesBoxTitle {
+  border: 2px solid #FF5297;
+  background-color: #ffcbdf;
+}
+
+#resourcesReading {
+  border: 2px solid #FF7A5E;
+  border-radius: 0.5rem;
+  color: #FF7A5E;
+}
+
+#resourcesReading  .resourcesBoxTitle {
+  border: 2px solid #FF7A5E;
+  background-color: #ffc9be;
+}
+
+#resourcesGrammar {
+  border: 2px solid #38FFB4;
+  border-radius: 0.5rem;
+  color: #38FFB4;
+}
+
+#resourcesGrammar  .resourcesBoxTitle {
+  border: 2px solid #38FFB4;
+  background-color: #c3ffe8;
+}
+
+#resourcesWriting {
+  border: 2px solid #D645FF;
+  border-radius: 0.5rem;
+  color: #D645FF;
+}
+
+#resourcesWriting  .resourcesBoxTitle {
+  border: 2px solid #D645FF;
+  background-color: #f2c7ff;
+}
+
+#resourcesListening {
+  border: 2px solid #6738FF;
+  border-radius: 0.5rem;
+  color: #6738FF;
+}
+
+#resourcesListening  .resourcesBoxTitle {
+  border: 2px solid #6738FF;
+  background-color: #e0d7ff;
+}
+
+#resourcesMore {
+  border: 2px solid #FFD05E;
+  border-radius: 0.5rem;
+  color: #FFD05E;
+}
+
+#resourcesMore  .resourcesBoxTitle {
+  border: 2px solid #FFD05E;
+  background-color: #fff5de;
+}
+
+/**
+* ----------------------------------------
+* MEDIA QUERIES
+* ----------------------------------------
+*/
+@media (max-width: 1300px) {
+  .resourcesBox {
+    width: 45%;
+  }
+
+} 
+
+@media (max-width: 600px) {
+  .resourcesBox {
+    width: 100%;
+    margin: 0.6rem;
+  }
+}

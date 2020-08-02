@@ -1,0 +1,63 @@
+{
+  "name": "parrot",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "pure-react-carousel": "^1.27.1",
+    "react": "^16.13.1",
+    "react-awesome-button": "^6.5.1",
+    "react-bootstrap": "^1.0.1",
+    "react-calendar": "^3.1.0",
+    "react-cookie": "^4.0.3",
+    "react-countdown-circle-timer": "^2.3.7",
+    "react-dom": "^16.13.1",
+    "react-draggable": "^4.4.3",
+    "react-helmet": "^6.1.0",
+    "react-kakao-login": "^1.2.2",
+    "react-quiz-component": "^0.3.4",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^1.2.2",
+    "react-scripts": "^3.4.1",
+    "react-to-print": "^2.9.0",
+    "react-twitter-widgets": "^1.9.5",
+    "redux": "^4.0.5",
+    "redux-form": "^8.3.6",
+    "redux-thunk": "^2.3.0",
+    "uuidv4": "^6.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.5.0"
+  }
+}

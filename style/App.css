@@ -1,0 +1,451 @@
+/**DEFAULT FONTS**/
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;900&display=swap');
+
+/**BODY**/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/**DEFAULT BUTTONS**/
+button {
+    border-radius: 0.35rem;
+    box-shadow: none;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0.3rem;
+    padding: 0.2rem;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/**DEFAULT A LINKS**/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*Modal */
+.modalButton {
+    border: none;
+    padding: 1rem 1rem;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+
+.modal-main {
+    position:fixed;
+    background: white;
+    width: 80%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.modal-main .modalCloseButton {
+    width: 10rem;
+}
+  
+.display-block {
+    display: block;
+}
+  
+.display-none {
+    display: none;
+}
+
+.signUpLoginButton {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.signUpLoginButton button{
+    text-transform: uppercase;
+    border: solid #B74157;
+    color: #B74157;
+    text-shadow: 1px 1px #573B49;
+    box-shadow: 2px 2px #852536;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+
+.selfStudyText {
+    text-transform: uppercase;
+    color: #87F5FB;
+    text-shadow: 1px 1px #6FBFE3;
+}
+.coursesText {
+    text-transform: uppercase;
+    color:#efd4ff;
+    text-shadow: 1px 1px #C7B5E8;
+}
+.tutoringText {
+    color: #fad2d2;
+    text-shadow: 1px 1px #E3B3CB;
+    text-transform: uppercase;
+}
+
+.translatingText {
+    color: #C3BFB4;
+    text-shadow: 1px 1px #4B4B48;
+    text-transform: uppercase;
+}
+
+.cultureText {
+    color: #d7f7ce;
+    text-shadow: 1px 1px #AFE0B4;
+    text-transform: uppercase;
+}
+
+.cultureText:hover {
+    background-color: #ffffff;
+}
+
+.level1Text {
+    color: #f1cc23;
+    text-shadow: 1px 1px #c0a31c;
+}
+
+.level2Text {
+    color: #f1cc23;
+    text-shadow: 1px 1px #c0a31c;
+}
+
+.level3Text {
+    color: #6cdd05;
+    text-shadow: 1px 1px #56b004;
+}
+
+.level4Text {
+    color: #6cdd05;
+    text-shadow: 1px 1px #56b004;
+}
+
+.level5Text {
+    color: #00bbe5;
+    text-shadow: 1px 1px #0095b7;
+}
+
+.level6Text {
+    color: #00bbe5;
+    text-shadow: 1px 1px #0095b7;
+}
+
+.levelKIIPText {
+    text-shadow: 1px 1px #679a85;
+    color: #81c1a7;
+}
+
+.levelTOPIKText {
+    text-shadow: 1px 1px #bf7d38;
+    color: #ef9d47;
+}
+.TOPIKButton {
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px #bf7d38;
+    background-color: #ef9d47;
+    color: #ffffff;
+    text-shadow: 1px 1px #bf7d38;
+}
+
+.KIIPButton {
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px #679a85;
+    background-color: #81c1a7;
+    color: #ffffff;
+    text-shadow: 1px 1px #679a85;
+}
+
+.resources {
+    background-color: #f1bc52;
+    box-shadow: 1px 1px #c09641;
+    color: #ffffff;
+    text-shadow: 1px 1px rgb(97, 96, 96);
+}
+
+.resourcesText {
+    color: #f1bc52;
+    text-shadow: 1px 1px #c09641;
+}
+
+/**VOCAB/GRAMMAR BANK **/
+.memoryBank {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.memoryBank header {
+    text-align: center;
+    margin: 1rem;
+}
+
+.memoryBankContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+
+.memoryBankBox {
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.memoryBankBox table {
+    border-collapse: collapse;
+}
+
+.memoryBankBox h3 {
+    text-align: center;
+}
+
+.memoryBankBox th {
+    border-right: 1px solid rgb(190, 181, 181);
+    border-bottom: 1px solid rgb(190, 181, 181);
+    padding: 0.5rem;
+}
+
+.memoryBankBox th:last-child {
+    border-right: none;
+}
+
+.memoryBankBox td {
+    border-bottom: 1px solid rgb(190, 181, 181);
+    border-right: 1px solid rgb(190, 181, 181);
+    padding: 0.2rem;
+}
+
+.memoryBankBox td:last-child {
+    border-right: none;
+}
+
+.memoryBankButton {
+   color: green;
+}
+
+#memoryBankVocab {
+    width: 30%;
+}
+
+#memoryBankGrammar{
+    width: 65%;
+}
+
+.memoryBankAddButton {
+    border: none;
+    padding: 0.2rem;
+}
+
+.memoryBankAddButton:focus{
+    background-color: #d1f8fa;
+}
+
+.memoryBankAddButton:hover{
+    background-color: #d1f8fa;
+}
+
+.removeMemoryBank {
+    cursor: pointer;
+    color: red;
+}
+
+.removeMemoryBank:hover {
+    color: purple;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    width: 100%;
+ }
+ 
+ #footerBackgroundImage {
+     background-image: url(../assets/images/footer-background.jpg);
+     opacity: 0.3;
+     width: 100%;
+     z-index: -1;
+     height: 7.5rem;
+     position: absolute;
+     bottom: 0;
+ }
+ 
+ #footer {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     text-align: center;
+     margin: 0 auto;
+     height: 7.5rem;
+ }
+ #footer #footerLeft {
+     display: flex;
+     flex-direction: column;
+     padding: 1rem;
+     opacity: 1;
+ }
+ 
+ #footer #footerCenter {
+     padding: 1rem;
+     text-align: center;
+ }
+ 
+ #footer #footerSocialMedia {
+     margin-top: 1rem;
+     font-size: 2rem;
+ }
+ 
+ #footerSocialMedia .socialMediaIcon {
+     padding: 0.5rem;
+ }
+ 
+ #footerSocialMedia .socialMediaIcon:hover {
+     transition: ease;
+     animation: hover-move 1s;
+ }
+ #footer #footerRight {
+     display: flex;
+     flex-direction: column;
+     padding: 1rem;
+ }
+ #pageNotFound {
+     text-align: center;
+ }
+ #imagePageNotFound {
+     opacity: 0.3;
+     margin: 1rem;
+ }
+
+ .smallText {
+     font-size: smaller;
+ }
+
+ .forgotPasswordLink {
+     color: red;
+ }
+
+ 
+/**
+* ----------------------------------------
+* MEDIA QUERIES
+* ----------------------------------------
+*/
+
+@media (max-width: 600px) {
+    #footer #footerLeft{
+        padding: 0;
+    }
+    #footer #footerRight {
+        padding: 0;
+    }
+    #footer #footerCenter {
+        padding: 0;
+    }
+    #footer #footerSocialMedia {
+        margin-top: 0;
+    }
+    #footerSocialMedia .socialMediaIcon {
+        padding: 0.1rem;
+    }
+    
+}
+
+/**
+* ----------------------------------------
+* ANIMATIONS
+* ----------------------------------------
+*/
+@keyframes bounce-up {
+    12% {
+        transform: translate(0, 5px);
+    }
+
+    25% {
+        transform: translate(0, 0);
+    }
+
+    37% {
+        transform: translate(0, 5px);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes bounce-up-twist {
+    12% {
+        transform: translate(0, 5px);
+    }
+
+    25% {
+        transform: translate(0, 0);
+    }
+
+    37% {
+        transform: translate(0, 5px);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes hover-move {
+    0% {
+        transform: scale(1);
+        
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+  

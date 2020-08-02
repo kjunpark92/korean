@@ -1,0 +1,728 @@
+#levelContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    width: 100%;
+}
+#levelContainer h3 {
+    color: #1DD19B;
+    text-shadow: 1px 1px #387341;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#levelContainer .selfStudyButton {
+    font-size: 2rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    color: white;
+    text-shadow: 1px 1px rgb(97, 96, 96);
+    width: 50%;
+}
+
+#levelContainer .selfStudyButton h4 {
+    color: white;
+}
+
+#levelContainer .courseButton h4 {
+    color: white;
+}
+#levelContainer .selfStudyButton:hover {
+    animation: color-change 2s linear infinite alternate both;
+}
+
+.levelTitle{
+    font-size: 1.5rem;
+}
+
+.levelsRow {
+    display: flex;
+    width: 100%;
+}
+
+#landingPageMiddleSectionContainer .levelBeginner{
+    color: #f1cc23;
+    text-shadow: 1px 1px #bea018;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#landingPageMiddleSectionContainer .levelIntermediate{
+    color: #6cdd05;
+    text-shadow: 1px 1px #519b0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#landingPageMiddleSectionContainer .levelAdvanced{
+    color: #00bbe5;
+    text-shadow: 1px 1px #0583a0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.levelBeginner .selfStudyButton {
+    background-color: #f1cc23;
+    box-shadow: 1px 1px #c0a31c;
+}
+
+.levelIntermediate .selfStudyButton {
+    background-color: #6cdd05;
+    box-shadow: 1px 1px #56b004;
+}
+
+.levelAdvanced .selfStudyButton {
+    background-color: #00bbe5;
+    box-shadow: 1px 1px #0095b7;
+}
+
+#landingPageMiddleSectionContainer .coursesBeginner{
+    background-color: #f1cc23;
+    box-shadow: 1px 1px #c0a31c;
+    color: white;
+    border: none;
+}
+
+#landingPageMiddleSectionContainer .coursesIntermediate{
+    background-color: #6cdd05;
+    box-shadow: 1px 1px #56b004;
+    color: white;
+    border: none;
+}
+
+#landingPageMiddleSectionContainer .coursesAdvanced{
+    background-color: #00bbe5;
+    box-shadow: 1px 1px #0095b7;
+    color: white;
+    border: none;
+}
+
+#landingPageMiddleSectionContainer .coursesTOPIK{
+    background-color: #ef9d47;
+    box-shadow: 1px 1px #bf7d38;
+    color: white;
+    text-shadow: 1px 1px rgb(97, 96, 96);
+    border: none;
+}
+
+#landingPageMiddleSectionContainer .coursesKIIP{
+    background-color: #81c1a7;
+    box-shadow: 1px 1px #679a85;
+    color: white;
+    text-shadow: 1px 1px rgb(97, 96, 96);
+    border: none;
+}
+
+.courseButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.6rem;
+}
+
+.courseButton:hover {
+    animation: color-change 2s linear infinite alternate both;
+}
+
+
+
+#levelsRouter {
+    display: flex;
+    flex-direction: row;
+    min-height: 85vh;
+}
+
+#levelsSideBar {
+    width: 15%;
+    margin: 0.5rem;
+}
+
+.displaySideBar {
+    display: none;
+}
+
+#levelsSideBar h3 {
+    text-align: center;
+}
+
+#levelsSideBar ul {
+    padding: 0.3rem;
+}
+
+#levelsSideBar li {
+    padding: 0.3rem;
+    margin: 0.3rem;
+    text-align: center;
+    list-style-type: none;
+    opacity: 0.9;
+}
+
+#levelsSideBar li:hover {
+    opacity: 1;
+}
+
+#sideBarSelfStudy li {
+    box-shadow: 2px 2px #0e789b;
+    background-color: #14ACDE;
+    color: #ffffff;
+    text-shadow: 1px 1px #0e789b;
+    border-radius: 0.5rem;
+}
+
+#sideBarMore li{
+    box-shadow: 2px 2px #D12854;
+    background-color: #de6887;
+    color: #ffffff;
+    text-shadow: 1px 1px #D12854;
+    border-radius: 0.5rem;
+}
+
+
+#levelsMainView {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+#levelsMainView header {
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+#levelsNavigation {
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px rgb(97, 96, 96);
+}
+
+.levelsNavigationItem {
+    border-radius: 0.5rem;
+    width: 19rem;
+    padding: 3rem;
+    margin: 1rem;
+    color: white;
+    text-shadow: 1px 1px rgb(97, 96, 96);
+}
+
+.levelsNavigationLevel1 {
+    background-color: #f1cc23;
+    box-shadow: 1px 1px #c0a31c;
+}
+
+.levelsNavigationLevel2 {
+    background-color: #f1cc23;
+    box-shadow: 1px 1px #c0a31c;
+}
+
+.levelsNavigationLevel3 {
+    background-color: #6cdd05;
+    box-shadow: 1px 1px #56b004;
+}
+
+.levelsNavigationLevel4 {
+    background-color: #6cdd05;
+    box-shadow: 1px 1px #56b004;
+}
+
+.levelsNavigationLevel5 {
+    background-color: #00bbe5;
+    box-shadow: 1px 1px #0095b7;
+}
+
+.levelsNavigationLevel6 {
+    background-color: #00bbe5;
+    box-shadow: 1px 1px #0095b7;
+}
+
+.levelsBorderLevel1 {
+    border: 1px solid #f1cc23;
+    box-shadow: 1px 1px #c0a31c;
+}
+
+.levelsBorderLevel2 {
+    border: 1px solid #f1cc23;
+    box-shadow: 1px 1px #c0a31c;
+}
+
+.levelsBorderLevel3 {
+    border: 1px solid #6cdd05;
+    box-shadow: 1px 1px #56b004;
+}
+
+.levelsBorderLevel4 {
+    border: 1px solid #6cdd05;
+    box-shadow: 1px 1px #56b004;
+}
+
+.levelsBorderLevel5 {
+    border: 1px solid #00bbe5;
+    box-shadow: 1px 1px #0095b7;
+}
+
+.levelsBorderLevel6 {
+    border: 1px solid #00bbe5;
+    box-shadow: 1px 1px #0095b7;
+}
+
+#coursesBanner {
+    width: 40rem;
+    border: 3px solid #99B1EA;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+}
+
+ /* GrammarView */
+ #grammarContainer {
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    width: 100%;
+}
+
+#grammarContainer header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#grammarUnitsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.grammarUnitsIndividual {
+    margin: 0.3rem;
+    text-align: center;
+    width: 45%;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grammarBoxCollapsible {
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+.grammarUnitContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.grammarExplanation {
+    width: 48%;
+    margin: 0.2rem;
+    white-space: pre-line;
+    padding: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 1px dashed black;
+    position: relative;
+}
+
+
+.grammarExamples {
+    border-left: 1px dashed black;
+    width: 48%;
+    margin: 0.2rem;
+    margin: 0.2rem;
+    white-space: pre-line;
+    padding: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.grammarFooter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grammarGamesButton {
+    box-shadow: 2px 2px #0e789b;
+    background-color: #14ACDE;
+    color: #ffffff;
+    text-shadow: 1px 1px #0e789b;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.3rem;
+}
+
+.grammarCoursesButton {
+    box-shadow: 2px 2px #D12854;
+    background-color: #de6887;
+    color: #ffffff;
+    text-shadow: 1px 1px #D12854;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.3rem;
+}
+/** Vocab Pages**/
+#vocabContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#vocabContainer header {
+    text-transform: uppercase;
+}
+#vocabContainer div, table {
+    border-radius: 0.5rem;
+}
+
+.vocabGroupContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.vocabBoxCollapsible {
+    padding: 0.5rem;
+}
+
+
+.vocabTable {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 45%;
+}
+
+.vocabTable h2 {
+    text-transform: uppercase;
+}
+
+.vocabTable table {
+    margin: 0 auto;
+    padding: 0.3rem;
+    border-collapse: collapse;
+}
+
+.vocabTable table td {
+    border-bottom: 1px solid rgb(158, 153, 153);
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.vocabTable tbody tr:hover {
+    background-color: #f3f3f3;
+}
+
+.koreanColumn {
+    min-width: 10rem;
+}
+
+
+/**KIIP Content **/
+#KIIPContainer {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#KIIPLevelsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.KIIPLevel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.KIIPBoxCollapsible {
+    width: 90%;
+    background-color: #81c1a7;
+    border-radius: 0.5rem;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    color: #ffffff;
+    text-shadow: 1px 1px #679a85;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.innerCollapsible {
+    background-color: #81c1a7;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: 1px 1px #679a85;
+}
+
+.KIIPBoxTitle {
+    font-size: 1.5rem;
+}
+.KIIPBoxContent ul {
+    padding: 0;
+}
+
+.KIIPBoxContent li {
+    list-style-type: none;
+}
+
+.KIIPBoxContent .KIIPBoxTitle {
+    color: #19515C;
+    font-size: 1.2rem;
+}
+
+#ebookContainer {
+    width: 100%;
+}
+
+#KIIPSpeakingTestContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#KIIPSpeakingTestContainer header{
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.KIIPSpeakingQuestionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    white-space: pre-wrap;
+}
+
+.KIIPSpeakingQuestionBox h3 {
+    text-align: center;
+}
+
+.KIIPSpeakingQuestionBox p {
+    width: 50%;
+    text-align: center;
+}
+
+.KIIPSpeakingQuestionBox img {
+    width: 20rem;
+    height: 20rem;
+    border: none;
+}
+
+
+/**TOPIK Content **/
+#TOPIKContainer {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#TOPIKBoxesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.TOPIKBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #ef9d47;
+    box-shadow: 1px 1px #bf7d38;
+    border-radius: 0.5rem;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    width: 45%;
+}
+
+.TOPIKBox h3{
+    background-color: #ef9d47;
+    box-shadow: 1px 1px #bf7d38;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px #bf7d38;
+    width: 100%;
+}
+
+.TOPIKBox ul {
+    padding: 0;
+}
+
+.TOPIKBox li {
+    text-align: left;
+}
+
+/**Error Page **/
+.showLevelsError {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+.showLevelsError header {
+    text-transform: uppercase;
+}
+
+/**
+* ----------------------------------------
+* MEDIA QUERIES
+* ----------------------------------------
+*/
+
+@media (max-width: 1300px) {
+    .levelsNavigationItem {
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 1rem;
+        font-size: small;
+    }
+
+    #coursesBanner {
+        max-width: 50%;
+        border: 3px solid #99B1EA;
+        border-radius: 0.5rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .KIIPLevel {
+        border: 1px solid green;
+        border-radius: 0.5rem;
+        margin: 0.3rem;
+        padding: 0.3rem;
+        width: 100%;
+    }
+
+    .grammarUnitsIndividual {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .grammarExplanation {
+        width: 100%;
+        flex-direction: column;
+        border-right: none;
+        border-bottom: 1px dashed black;
+    }
+    
+    .grammarExamples {
+        width: 100%;
+        border-left: none;
+        border-top: 1px dashed black;
+    }
+
+    .vocabTable {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        width: 100%;
+    }
+} 
+
+@media (max-width: 600px) {
+    #levelsRouter {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #levelsSideBar {
+        width: 100%;
+    }
+
+    #levelsMainView header {
+        text-align: center;
+        margin: 0.3rem;
+        padding: 0;
+    }
+
+    .levelsNavigationItem {
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 1rem;
+        font-size: small;
+    }
+
+    #coursesBanner {
+        max-width: 50%;
+        border: 3px solid #99B1EA;
+        border-radius: 0.5rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .grammarUnitsIndividual {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .grammarExplanation {
+        width: 100%;
+        flex-direction: column;
+        border-right: none;
+        border-bottom: 1px dashed black;
+    }
+    
+    .grammarExamples {
+        width: 100%;
+        border-left: none;
+        border-top: 1px dashed black;
+    }
+
+    .vocabTable {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    .KIIPLevel {
+        border: 1px solid green;
+        border-radius: 0.5rem;
+        margin: 0.3rem;
+        padding: 0.3rem;
+        width: 100%;
+    }
+
+}

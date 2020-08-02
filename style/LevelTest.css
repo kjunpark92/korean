@@ -1,0 +1,140 @@
+#levelTestContainer {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+#KIIPTestContainer {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+#levelTestContainer header{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.react-quiz-container {
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    margin: 0 auto !important;
+    padding: 0.5rem;
+    width: 90% !important;
+    white-space: pre-line;
+}
+
+.react-quiz-container img {
+    max-width: 50%;
+}
+
+.react-quiz-container .tag-container {
+    display: none;
+}
+.questionWrapperBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem !important;
+}
+.questionWrapperBody .answerBtn {
+    font-size: 1.5rem !important;
+    width: 50% !important;
+}
+
+.react-quiz-container .incorrect {
+    background-color: #D8456E !important;
+    text-shadow: 1px 1px black;
+}
+
+.react-quiz-container .correct {
+    background-color: #18C29C !important;
+    text-shadow: 1px 1px black;
+}
+
+.react-quiz-container .startQuizBtn {
+    color: black !important;
+    text-transform: uppercase;
+    font-size: 2rem !important;
+}
+
+#levelTestResultLevel span {
+    color: purple;
+    animation: focus-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#levelTestRecommendBoxes{
+    margin: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.levelTestRecommendBox {
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    margin: 0.5rem;
+}
+
+.testAnswersDisplay{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testAnswerText {
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+}
+
+.testAnswerList ul{
+    padding: 0;
+    margin: 0;
+}
+
+.testAnswerList li{
+    text-align: left;
+    margin: 0 auto;
+}
+
+/**
+* ----------------------------------------
+* MEDIA QUERIES
+* ----------------------------------------
+*/
+@media (max-width: 600px) {
+    .react-quiz-container img {
+        max-width: 100%;
+    }
+}
+
+/**
+ * ----------------------------------------
+ * KEYFRAMES
+ * ----------------------------------------
+ */
+
+@keyframes focus-in{
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-800px);
+                transform: translateZ(-800px);
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+    }
+}

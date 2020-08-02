@@ -1,0 +1,479 @@
+/* Landing Page Styles */
+#landingPage {
+    width: 100%;
+}
+
+/* Landing Banner Component */
+#landingBanner {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+    animation: background-color-change 8s linear infinite alternate both;
+}
+
+#landingBanner h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.landingContainer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#levelTestButton {
+    background-color: #C8DEFD;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+    color: #000000;
+}
+
+#levelTestInfo {
+    font-size: 1rem;
+    color: #cdc8fd;
+}
+
+.landingIconIndividual {
+    margin-left: 0.3rem;
+    margin-right: 0.4rem;
+}
+
+.landingSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.landingSection h2 {
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.landingSection h3 {
+    text-shadow: 1px 1px #ffffff;
+}
+
+.landingSectionContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.landingSectionContainer ul {
+    max-width: 20rem;
+    
+}
+
+.landingSectionContainer li {
+    text-align: left;
+    padding: 0;
+}
+
+#landingGames {
+    flex-direction: row;
+}
+
+.eachLandingSection {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#selfStudyContainer {
+    background-color: #f1fcfd;
+    text-shadow: 1px 1px #6FBFE3;
+}
+
+#selfStudyContainer h2 {
+    color: #87F5FB;
+}
+#selfStudyContainer .selfStudyLevelButton {
+    background-color: #d1f8fa;
+}
+
+#selfStudyContainer .landingButton {
+    background-color: #d1f8fa;
+}
+
+#coursesSectionContainer {
+    background-color: #fdfaff;
+}
+
+#coursesSectionContainer h2 {
+    color: #efd4ff;
+    text-shadow: 1px 1px #C7B5E8;
+}
+
+#coursesSectionContainer .landingButton {
+    background-color: #efd4ff;
+}
+
+.landingIconCourses {
+    font-size: 3rem;
+}
+
+#tutorsSectionContainer {
+    background-color: #fef6f6;
+}
+
+#tutorsSectionContainer h2{
+    color:#fad2d2;
+    text-shadow: 1px 1px #E3B3CB;
+}
+
+#tutorsSectionContainer .landingButton{
+    background-color: #fad2d2;
+}
+
+#cultureSectionContainer {
+    background-color: #f7fdf5;
+}
+
+#cultureSectionContainer h2 {
+    color: #d7f7ce;
+    text-shadow: 1px 1px #AFE0B4;
+}
+
+#cultureSectionContainer .landingButton{
+    background-color:  #d7f7ce;
+}
+
+#selfStudyContainer .landingSection {
+    border-bottom: 1px dashed black;
+}
+#selfStudyContainer .landingSection:last-child {
+    border: none;
+}
+
+.selfStudyLevelButton {
+    border-radius: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;    
+    margin: 0.3rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+
+.landingButton {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin: 0.2rem;
+}
+
+.individualProfile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+    width: 7rem;
+    height: 10rem;
+}
+
+.individualProfile img {
+    width: 5rem;
+    padding: 0.2rem;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.starRatings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Landing Page Reviews*/
+#reviewsCarousel h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fdf2cf;
+    text-shadow: 1px 1px #E6DFB1;
+}
+
+.reviewsCarouselContainer {
+    height: 12rem;
+    position: relative;
+}
+
+#reviewsCarousel #carouselBorders {
+    margin: 0 auto;
+    z-index: 0;
+    width: 90%;
+}
+
+#reviewsSliders .carousel__next-button {
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+    width: 5rem;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+    z-index: 1;
+}
+
+#reviewsSliders .carousel__back-button {
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+    width: 5rem;
+    position: absolute;
+    top: 35%;
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+    z-index: 1;
+}
+
+.individualReview {
+    height: 10rem;
+    border-radius: 0.5rem;
+    background-color: #fdf2cf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.individualReview .reviewName {
+    text-align: right;
+}
+
+/**
+* ----------------------------------------
+* MEDIA QUERIES
+* ----------------------------------------
+*/
+
+/**Half Size Screen **/
+@media (max-width: 1000px) {
+   
+    .individualProfile img {
+        width: 50%;
+    }
+
+    .reviewsCarouselContainer {
+        height: 8rem;
+        position: relative;
+    }
+
+    .individualReview {
+        height: 6rem;
+        padding: 0.2rem;
+        margin: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .landingSectionContainer {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .landingSection {
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .eachLandingSection {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+     #selfStudyContainer .landingSection:first-of-type{
+        flex-direction: row;
+    }
+
+    #coursesSectionContainer .landingSectionContainer{
+        flex-direction: row;
+    }
+
+    #topTutorsSection .landingSectionContainer{
+        flex-direction: row;
+    }
+
+    #cultureSectionContainer .landingSectionContainer{
+        flex-direction: row;
+    }
+
+
+}
+@media (max-width: 900px) {
+
+
+    .landingSectionContainer {
+        flex-direction: column;
+    }
+
+    .eachLandingSection {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landingSectionContainer ul {
+        width: 100%;
+    }
+    
+    #landingGames {
+        flex-direction: column;
+    }
+    .landingButton {
+        height: 10rem;
+        margin: 0.2rem;
+        padding: 0.2rem;
+    }
+
+    .individualProfile img {
+        width: 50%;
+    }
+
+    .reviewsCarouselContainer {
+        height: 8rem;
+        position: relative;
+    }
+
+    .individualReview {
+        height: 6rem;
+        padding: 0.2rem;
+        margin: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+} 
+
+@media (max-width: 600px) {
+    .landingSection h2 {
+        width:fit-content;
+    }
+
+    .landingSectionContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95%;
+        padding: 0.8rem;
+    }
+    
+    .landingSectionContainer ul {
+        width: 100%;
+    }
+
+    .landingSectionContainer li {
+        margin: 0 auto;
+    }
+
+    .landingButton {
+        width: 20rem;
+    }
+
+    .individualProfile img {
+        width: 50%;
+    }
+
+    #reviewsCarousel {
+        display: none;
+    }
+
+    button {
+        margin: 0.2rem;
+        padding: 0.1rem;
+    }
+}
+
+/**
+* ----------------------------------------
+* ANIMATIONS
+* ----------------------------------------
+*/
+
+
+@keyframes hover-move {
+    0% {
+        transform: scale(1);
+        
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes color-change {
+    0% {
+        background: #ea2222;
+        box-shadow: 1px 1px #d6d3d3;
+    }
+    50% {
+        background: #b22cff;
+        box-shadow: 1px 1px #d6d3d3;
+    }
+    100% {
+        background: #19dcea;
+        box-shadow: 1px 1px #d6d3d3;
+    }
+}
+
+
+  @keyframes background-color-change {
+    0% {
+      background: #d1f8fa;
+    }
+    25% {
+      background: #efd4ff;
+    }
+    50% {
+      background: 
+      #fad2d2;
+    }
+    75% {
+      background: #fdf2cf;
+    }
+    100% {
+      background: #d7f7ce;
+    }
+  }
+  
+  

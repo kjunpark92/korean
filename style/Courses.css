@@ -1,0 +1,173 @@
+#coursesMainView {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#coursesMainView header {
+    text-transform: uppercase;
+    text-align: center;
+}
+.coursesWrapper {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.coursesWrapper h2 {
+    margin: 0;
+}
+
+.coursesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.coursesIndividualCourses {
+    border-radius: 0.5rem;
+    color: #ffffff;
+    height: 8rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.3rem;
+    width: 13rem;
+    text-shadow: 1px 1px rgb(97, 96, 96);
+}
+
+.coursesContainer button {
+    padding: 0.4rem;
+    border: none;
+    color: #ffffff;
+    text-shadow: 1px 1px rgb(97, 96, 96);
+    text-transform: uppercase;
+}
+
+#coursesFree {
+    border: 2px solid #F20CCE;
+    border-radius: 0.5rem;
+}
+
+#coursesFree h2 {
+    color: #F20CCE;
+    text-shadow: 1px 1px #a90890;
+}
+
+#coursesFree .coursesIndividualCourses {
+    background-color: #F20CCE;
+    box-shadow: 1px 1px #a90890;
+}
+
+.coursesBeginner {
+    border: 2px solid #f1cc23;
+    border-radius: 0.5rem;
+}
+
+.coursesBeginnerIndividual {
+    background-color: #f1cc23;
+    box-shadow: 1px 1px #c0a31c;
+}
+
+.coursesBeginner .showMoreButton {
+    background-color: #f1cc23;
+    box-shadow: 1px 1px #c0a31c;
+}
+
+.coursesIntermediate {
+    border: 2px solid #6cdd05;
+    border-radius: 0.5rem;
+}
+
+.coursesIntermediateIndividual {
+    background-color: #6cdd05;
+    box-shadow: 1px 1px #56b004;
+}
+
+.coursesIntermediateIndividual .showMoreButton {
+    background-color: #6cdd05;
+    box-shadow: 1px 1px #56b004;
+}
+
+.coursesIntermediate .showMoreButton {
+    background-color: #6cdd05;
+    box-shadow: 1px 1px #56b004;
+}
+
+.coursesAdvanced{
+    border: 2px solid #00bbe5;
+    border-radius: 0.5rem;
+}
+
+.coursesAdvancedIndividual {
+    background-color: #00bbe5;
+    box-shadow: 1px 1px #0095b7;
+}
+
+.coursesAdvanced .showMoreButton {
+    background-color: #00bbe5;
+    box-shadow: 1px 1px #0095b7;
+}
+
+.coursesTOPIK {
+    border: 2px solid #ef9d47;
+    border-radius: 0.5rem;
+}
+
+.coursesTOPIKIndividual {
+    background-color: #ef9d47;
+    box-shadow: 1px 1px #bf7d38;
+}
+
+.coursesTOPIK .showMoreButton {
+    background-color: #ef9d47;
+    box-shadow: 1px 1px #bf7d38;
+}
+
+.coursesKIIP {
+    border: 2px solid #81c1a7;
+    border-radius: 0.5rem;
+}
+
+.coursesKIIPIndividual {
+    background-color: #81c1a7;
+    box-shadow: 1px 1px #679a85;
+}
+
+.coursesKIIP .showMoreButton {
+    background-color: #81c1a7;
+    box-shadow: 1px 1px #679a85;
+}
+
+
+/**
+* ----------------------------------------
+* MEDIA QUERIES
+* ----------------------------------------
+*/
+@media (max-width: 1300px) {
+    .coursesWrapper {
+        width: 95%;
+    }
+  
+    .coursesContainer button {
+        margin: 0.5rem;
+    }
+
+    .coursesIndividualCourses {
+        width: 13rem;
+    }
+} 
+
+@media (max-width: 600px) {
+    .coursesWrapper {
+        width: 92%;
+    }
+  
+}
